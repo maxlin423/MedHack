@@ -14,6 +14,8 @@
 		500153E51DADDB9700C8A13A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500153E31DADDB9700C8A13A /* LaunchScreen.storyboard */; };
 		500153F01DADDB9700C8A13A /* MedHackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500153EF1DADDB9700C8A13A /* MedHackTests.swift */; };
 		500153FB1DADDB9700C8A13A /* MedHackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500153FA1DADDB9700C8A13A /* MedHackUITests.swift */; };
+		50D45A081DB02CA200755047 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D45A031DB02C9A00755047 /* Charts.framework */; };
+		50D45A091DB02CA200755047 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50D45A031DB02C9A00755047 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,49 @@
 			remoteGlobalIDString = 500153D61DADDB9600C8A13A;
 			remoteInfo = MedHack;
 		};
+		50D45A021DB02C9A00755047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D459FC1DB02C9900755047 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		50D45A041DB02C9A00755047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D459FC1DB02C9900755047 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		50D45A061DB02C9A00755047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D459FC1DB02C9900755047 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		50D45A0A1DB02CA200755047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D459FC1DB02C9900755047 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		500154181DADDD6000C8A13A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				50D45A091DB02CA200755047 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		500153D71DADDB9700C8A13A /* MedHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +91,7 @@
 		500153F61DADDB9700C8A13A /* MedHackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedHackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		500153FA1DADDB9700C8A13A /* MedHackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedHackUITests.swift; sourceTree = "<group>"; };
 		500153FC1DADDB9700C8A13A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D459FC1DB02C9900755047 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D45A081DB02CA200755047 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +123,7 @@
 		500153CE1DADDB9600C8A13A = {
 			isa = PBXGroup;
 			children = (
+				50D459FC1DB02C9900755047 /* Charts.xcodeproj */,
 				500153D91DADDB9700C8A13A /* MedHack */,
 				500153EE1DADDB9700C8A13A /* MedHackTests */,
 				500153F91DADDB9700C8A13A /* MedHackUITests */,
@@ -125,6 +172,16 @@
 			path = MedHackUITests;
 			sourceTree = "<group>";
 		};
+		50D459FD1DB02C9900755047 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50D45A031DB02C9A00755047 /* Charts.framework */,
+				50D45A051DB02C9A00755047 /* ChartsRealm.framework */,
+				50D45A071DB02C9A00755047 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +192,12 @@
 				500153D31DADDB9600C8A13A /* Sources */,
 				500153D41DADDB9600C8A13A /* Frameworks */,
 				500153D51DADDB9600C8A13A /* Resources */,
+				500154181DADDD6000C8A13A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				50D45A0B1DB02CA200755047 /* PBXTargetDependency */,
 			);
 			name = MedHack;
 			productName = MedHack;
@@ -218,6 +277,12 @@
 			mainGroup = 500153CE1DADDB9600C8A13A;
 			productRefGroup = 500153D81DADDB9700C8A13A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 50D459FD1DB02C9900755047 /* Products */;
+					ProjectRef = 50D459FC1DB02C9900755047 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				500153D61DADDB9600C8A13A /* MedHack */,
@@ -226,6 +291,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		50D45A031DB02C9A00755047 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 50D45A021DB02C9A00755047 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50D45A051DB02C9A00755047 /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = 50D45A041DB02C9A00755047 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50D45A071DB02C9A00755047 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 50D45A061DB02C9A00755047 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		500153D51DADDB9600C8A13A /* Resources */ = {
@@ -292,6 +381,11 @@
 			isa = PBXTargetDependency;
 			target = 500153D61DADDB9600C8A13A /* MedHack */;
 			targetProxy = 500153F71DADDB9700C8A13A /* PBXContainerItemProxy */;
+		};
+		50D45A0B1DB02CA200755047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 50D45A0A1DB02CA200755047 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -411,6 +505,7 @@
 		500154001DADDB9700C8A13A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MedHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -423,6 +518,7 @@
 		500154011DADDB9700C8A13A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MedHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -505,6 +601,7 @@
 				500154011DADDB9700C8A13A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		500154021DADDB9700C8A13A /* Build configuration list for PBXNativeTarget "MedHackTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +610,7 @@
 				500154041DADDB9700C8A13A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		500154051DADDB9700C8A13A /* Build configuration list for PBXNativeTarget "MedHackUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +619,7 @@
 				500154071DADDB9700C8A13A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
